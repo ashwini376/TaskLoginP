@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style media="screen">
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #f3eae5;
+  --text-dark: #2c2724;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(52, 43, 43);
+}
+
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+ 
+  position: relative;
+  isolation: isolate;
+ 
+ 
+ 
+}
+
+
+
+.container__right {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  gap: 2rem;
+}
+
+.container__right::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 45%;
+  transform: translateX(-50%);
+  width: 0;
+  transform-origin: left;
+  height: 60%;
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  z-index: -1;
+
+  animation: show 0.75s 1.25s ease-in-out forwards;
+}
+
+@keyframes show {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: calc(60% - 3rem);
+  }
+}
+
+.content {
+  padding-block: 0 5rem;
+  text-align: center;
+}
+
+
+.content h2 {
+  
+  font-size: 2rem;
+  letter-spacing: 2px;
+  padding-top: 120px;
+  
+  
+}
+
+.content p {
+  line-height: 1.75rem;
+  color: var(--text-dark);
+}
+
+.location {
+  position: absolute;
+  left: 30rem;
+  bottom: 0.25rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 1rem;
+  gap: 1rem;
+ 
+  color: var(--text-dark);
+  background-color: var(--primary-color);
+  border: 10px solid var(--white);
+  border-bottom: none;
+}
+
+.location span {
+  
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  background-color: var(--white);
+  border-radius: 10px;
+}
+  .container {
+    margin-top: 0;
+    padding: 2rem 0;
+    padding-left: 4rem;
+  }
+
+  
+
+
+@media (width > 1024px) {
+  .container__right {
+   
+   padding-left: 260px;
+   
+  }
+  
+  .content {
+    padding-block: 5rem;
+    max-width: 500px;
+    
+  }
+}
+#logout-btn{
+    border-radius: 9px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border: none;
+  
+}
+  
+      </style>
+</head>
+<body>
+
+
+    <div class="container">
+      
+        <div class="container__right">
+          <div class="content">
+            
+            <h2>Welcome to Your Dashboard</h2>
+           
+            <p>
+              You are logged in!
+            </p>
+          </div>
+        </div>
+        <div class="location">
+            
+          <span><button id="logout-btn">Logout</button></span>
+          
+          
+        </div>
+        
+      </div>
+  
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="js/main.js"></script>
+
+      <script src="js/auth.js"></script>
+
+
+
+<!-- 
+    <form id="Dashboard">
+        
+  
+    <div class="container">
+        <h3>Welcome to Your Dashboard</h3>
+        <p>You are logged in!</p>
+        <button id="logout-btn">Logout</button>
+    </div>
+</form> -->
+    
+</body>
+</html>

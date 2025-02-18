@@ -1,0 +1,100 @@
+/* body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #231f1f;
+}
+
+.container, .form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    padding-right: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkblue;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    background: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: darkblue;
+}
+ */
+
+ body {
+    background: url('https://source.unsplash.com/1600x900/?office,work') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.registration-box {
+    width: 55%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left-side {
+    background: url('https://source.unsplash.com/800x600/?team,people') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.right-side {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+

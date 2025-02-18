@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Auth System</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+    <style media="screen">
+        *,
+  *:before,
+  *:after{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+  body{
+      background-color: #080710;
+  }
+  .background{
+      width: 430px;
+      height: 520px;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      left: 50%;
+      top: 50%;
+  }
+  .background .shape{
+      height: 170px;
+      width: 170px;
+      position: absolute;
+      border-radius: 50%;
+      
+  }
+
+  #a{
+    margin-top: 170px;
+    
+  }
+  #b{
+    margin-bottom: 50px;
+  
+  }
+  .shape:first-child{
+      background: linear-gradient(
+          #0f7793,
+          #9cf0ff
+      );
+      left: -180px;
+      top: -70px;
+  }
+  .shape:last-child{
+      background: linear-gradient(
+          to right,
+          #a30a0a,
+          #eb4d4d
+      );
+      right: -180px;
+      bottom: 50px;
+  }
+  form{
+    
+      height: 200px;
+      width: 700px;
+      background-color: rgba(255,255,255,0.13);
+      position: absolute;
+      transform: translate(-50%,-50%);
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      border: 2px solid rgba(255,255,255,0.1);
+      box-shadow: 0 0 40px rgba(8,7,16,0.6);
+      padding: 50px 35px;
+  }
+  form *{
+    font-family: "Montserrat", sans-serif;
+      color: #ffffff;
+      letter-spacing: 0.5px;
+      outline: none;
+      border: none;
+  }
+
+  
+
+
+      </style>
+</head>
+<body>
+    
+    
+    <div class="background">
+        <div class="shape" id="a"></div>
+        <div class="shape" id="b"></div>
+    </div>
+    <div class="form-container">
+        
+        <form id="login-form">
+            <h3>Welcome to Our Authentication System</h3>
+        <p>Please register or login to continue.</p>
+            
+        <a href="register.html">Register</a> &nbsp; &nbsp; 
+        <a href="login.html">Login</a>
+
+  
+    
+        </form>
+   </div>
+    <script src="js/auth.js"></script>
+   
+</body>
+</html>
+
+
+
